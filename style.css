@@ -32,6 +32,10 @@
     z-index: 2;
 }
 
+.showcase.active {
+    right: 300px;
+}
+
 .showcase header {
     display: flex;
     position: absolute;
@@ -80,7 +84,6 @@
     object-fit: cover;
     opacity: 0.8;
 }
-
 
 .menu {
     display: none;
@@ -160,4 +163,36 @@
     display: flex;
     justify-content: center;
     align-items: center;   
+}
+
+.social li {
+    list-style: none;
+}
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(.8);
+    transition: 0.5s;
+}
+.social li a :hover {
+
+}
+
+@media (max-width: 991px) {
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+    
+    .text h2 {
+        font-style: 3em;
+
+    }
+    
+    .text h3 {
+        font-style: 2em;
+
+    }
+
 }
