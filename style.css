@@ -18,6 +18,11 @@
 }
 
 
+body{
+    background: #000;
+}
+
+
 .showcase {
     position: absolute;
     right: 0;
@@ -104,15 +109,8 @@
 
 .text {
     position: relative;
+    margin-left: 5%;
     z-index: 10;
-    padding-left: 5%;
-}
-.text strong {
-    color: white;
-    display: contents;
-    font-size: 34px;
-    display: inline-block
-
 }
 
 .text h2 {
@@ -120,7 +118,7 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
-
+    
 }
 
 
@@ -150,11 +148,22 @@
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .text a:hover {
     letter-spacing: 6px;
+    box-shadow: -2px 0px 98px 8px rgba(255, 255, 255, 0.69);
+    -webkit-box-shadow: -2px 0px 98px 8px rgba(255,255,255,0.69);
+    -moz-box-shadow: -2px 0px 98px 8px rgba(255,255,255,0.69);    
+    
+}
+
+.text strong {
+    color: white;
+    display: contents;
+    font-size: 34px;
+    display: inline-block
 
 }
 
@@ -164,22 +173,23 @@
 
 iframe {
     z-index: 100;
-    opacity: .7;
-    border-radius: 7px;
-    padding-right: 5%;
-    box-shadow: rgba(253, 253, 253, 0.3);
+    opacity: .8;
+    border-radius: 10px;
+    margin-right: 3%;
+    border: 2px solid #232323;
+    box-shadow: 6px 0px 101px 35px rgba(254,226,115,0.69);
+    -webkit-box-shadow: 6px 0px 101px 35px rgba(254,226,115,0.69);
+    -moz-box-shadow: 6px 0px 101px 35px rgba(254,226,115,0.69);
+
 }
 
-hr {
-    z-index: 100;
-    border: 2px solid #1111;
-}
+
 
 .social {
     position: absolute;
     bottom: 20px;
     z-index: 10;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;   
 }
@@ -191,13 +201,15 @@ hr {
     display: inline-block;
     filter: invert(1);
     margin-right: 20px;
-    transform: scale(.8);
-    transition: 0.5s;
+    transform: scale(1);
+    transition: 1s;
 }
-.social li a :hover {
-    transform: scale(1) translateY(-40px);
+.social li a:hover {
+
+    transform: translateY(-40px);
 
 }
+
 
 .menu {
     position: absolute; 
@@ -205,10 +217,13 @@ hr {
     top: 0;
     right: 0;
     width: 300px;
+    height: 100%;
     display: flex;
+    background: #2323;
     align-items: center;
     justify-content: center;
 }
+
 
 .menu ul {
     z-index: 100;
@@ -217,18 +232,20 @@ hr {
 }
 
 .menu ul li {
-    padding : 20px;
+    padding-top : 40px;
 }
 
 .menu ul li a {
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-style: 24px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
 }
 
 
 .menu ul li a:hover {
-    color:rgb(255, 213, 0)
+    color:rgb(129, 126, 108)
 }
 
 
@@ -249,4 +266,3 @@ hr {
     }
 
 }
-
