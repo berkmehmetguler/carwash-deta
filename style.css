@@ -35,7 +35,7 @@ body{
     background: rgb(83, 67, 67);
     color: aliceblue;
     z-index: 100;
-    transition: 0.4ms;
+    transition: .4s;
 }
 
 .showcase.active {
@@ -81,6 +81,7 @@ body{
     background-size: 50px;
     background-position: center;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 
 }
 
@@ -187,6 +188,7 @@ iframe {
 
 .social {
     position: absolute;
+    right: 5%;
     bottom: 20px;
     z-index: 10;
     display:flex;
@@ -196,6 +198,7 @@ iframe {
 
 .social li {
     list-style: none;
+    margin-right: 3%;
 }
 .social li a {
     display: inline-block;
@@ -222,6 +225,11 @@ iframe {
     background: #2323;
     align-items: center;
     justify-content: center;
+    border-left: 8px solid #2323;
+    box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
+    -webkit-box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
+    -moz-box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
+
 }
 
 
@@ -229,14 +237,25 @@ iframe {
     z-index: 100;
     position: relative;
     list-style-type: none;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .menu ul li {
     padding-top : 40px;
+
+}
+
+.menu ul li img {
+    justify-content: left;
+    display:inline-block;
+    margin-right: 20px;
 }
 
 .menu ul li a {
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     text-decoration: none;
     font-size: 24px;
@@ -245,7 +264,7 @@ iframe {
 
 
 .menu ul li a:hover {
-    color:rgb(129, 126, 108)
+    color:rgb(129, 126, 108);
 }
 
 
