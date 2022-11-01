@@ -29,11 +29,22 @@
     align-items: center;
     background: rgb(83, 67, 67);
     color: aliceblue;
-    z-index: 2;
+    z-index: 100;
+    transition: 0.4ms;
 }
 
 .showcase.active {
     right: 300px;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
 .showcase header {
@@ -43,7 +54,7 @@
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    z-index: 1000;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
 }
@@ -60,7 +71,7 @@
     position: relative;
     width: 50px;
     height: 50px;
-    background: url(./images/menu-icon.png);
+    background: url(./images/Menuicon-2.png);
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: center;
@@ -71,23 +82,13 @@
 .toggle.active {
     background: url(./images/cross.png);
     background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
     background-size: 45px;
-    background-position: center;   
+    background-position: center; 
+    cursor: pointer;  
 }
 
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-}
-
-.menu {
-    display: none;
-}
 
 .overlay {
     position: absolute;
@@ -104,6 +105,7 @@
 .text {
     position: relative;
     z-index: 10;
+    padding-left: 5%;
 }
 .text strong {
     color: white;
@@ -156,6 +158,23 @@
 
 }
 
+.frame-box {
+    display: contents;
+}
+
+iframe {
+    z-index: 100;
+    opacity: .7;
+    border-radius: 7px;
+    padding-right: 5%;
+    box-shadow: rgba(253, 253, 253, 0.3);
+}
+
+hr {
+    z-index: 100;
+    border: 2px solid #1111;
+}
+
 .social {
     position: absolute;
     bottom: 20px;
@@ -176,10 +195,44 @@
     transition: 0.5s;
 }
 .social li a :hover {
+    transform: scale(1) translateY(-40px);
 
 }
 
-@media (max-width: 991px) {
+.menu {
+    position: absolute; 
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    z-index: 100;
+    position: relative;
+    list-style-type: none;
+}
+
+.menu ul li {
+    padding : 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-style: 24px;
+    color: rgb(0, 0, 0);
+}
+
+
+.menu ul li a:hover {
+    color:rgb(255, 213, 0)
+}
+
+
+@media (max-width: 798px) {
     .showcase,
     .showcase header {
         padding: 40px;
@@ -196,3 +249,4 @@
     }
 
 }
+
