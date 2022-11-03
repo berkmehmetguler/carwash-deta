@@ -197,6 +197,7 @@ iframe {
 }
 
 .social li {
+    justify-content: center;
     list-style: none;
     margin-right: 3%;
 }
@@ -225,7 +226,6 @@ iframe {
     background: #2323;
     align-items: center;
     justify-content: center;
-    border-left: 8px solid #2323;
     box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
     -webkit-box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
     -moz-box-shadow: 61px -1px 0px -32px rgba(255,245,0,0.14) inset;
