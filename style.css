@@ -24,11 +24,18 @@ body{
 
 
 .header-logo img {
-    width: 300px;
-    justify-content: start;
-    align-items: center;
+    width: 100%; 
+    height: 100vh;
+
 }
 
+.header-logo img {
+    width: 350px; 
+    height: fit-content;
+    cursor: pointer;
+    
+
+}
 
 .showcase {
     position: absolute;
