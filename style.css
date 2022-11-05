@@ -30,7 +30,8 @@ header {
 }
 
 .header-logo  {
-    height: 70%;
+    height: 50%;
+    width: 50%;
     display: inline-block;
 
 }
