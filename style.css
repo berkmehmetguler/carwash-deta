@@ -21,12 +21,22 @@
 body{
     background: #000;
 }
+header {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
 
+.header-logo  {
+    height: fit-content;
+    display: inline-block;
+    position:sticky;
+}
 
 .header-logo img {
-    width: 100%; 
+    padding-top: 100px;
+    width: 100%;
     height: 100vh;
-
 }
 
 .header-logo img {
