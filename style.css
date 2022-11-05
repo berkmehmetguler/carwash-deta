@@ -23,6 +23,13 @@ body{
 }
 
 
+.header-logo img {
+    width: 300px;
+    justify-content: start;
+    align-items: center;
+}
+
+
 .showcase {
     position: absolute;
     right: 0;
